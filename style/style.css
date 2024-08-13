@@ -159,6 +159,68 @@ header div img{
         background-color: rgba(255, 66, 165, 1);
         margin: 10px 0;
     }
+    /* funny videos section */
+    .funny-video-section{
+        max-width: 1000px ;
+        margin: 10px auto;
+    }
+    .funny-video-title{
+        text-align: center;
+        padding: 20px 0;
+    }
+    .funny-video-title h3{
+        font-size: 3em;
+        font-weight: 700;
+    }
+    .funny{
+        font-size: 3rem;
+    }
+    .funny-video-main div img{
+        max-width: 100%;
+    }
+    .funny-video-main{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+    .parent{
+        position: relative;
+        text-align: center;
+    }
+    .funny-video-main .watch{
+        position: absolute;
+        top: 120px;
+        left: 65px;
+        display: none;
+    }
+.parent button{
+        font-size: 30px;
+        border: 0;
+        padding: 10px;
+        background-color: #ffffff00;
+        color:rgb(255, 255, 255);
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+    .funny-video-main div a{
+        text-decoration: none;
+        color: rgb(210, 30, 102);
+        font-size: 20px;
+        font-weight: 600;
+        display: block;
+        text-align: center;
+    }
+    .parent img{
+        display: block;
+        margin: 10px auto;
+    }
+    .parent img:hover{
+        filter: brightness(50%);
+    }
+    .parent img:hover+.watch{
+        display: block;
+    }
 /* Media query */
 @media screen and (max-width:576px) {
     body{
@@ -200,9 +262,29 @@ header div img{
     #we-are-right button, #banner-btn button{
         padding: 15px 20px;
     }
+    .funny-video-main{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .parent .watch{
+        top: 170px;
+        left:170px;
+    }
 }
 @media screen and (min-width:577px) and (max-width:992px){
+    body{
+        padding: 0 15px;
+    }
     nav{
         flex-direction: column;
+    }
+    #we-are-right h4{
+     width: auto;
+    } 
+    .funny-video-main{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .parent .watch{
+        top: 40%;
+        left: 36%;
     }
 }
