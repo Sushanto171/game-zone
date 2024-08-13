@@ -1,0 +1,142 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* share style here */
+.display-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+/* nav style start here */
+nav{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+nav .logo{
+    gap:10px;
+}
+nav ul{
+    gap: 10px;
+}
+nav ul li{
+    list-style: none;
+
+}
+nav li button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 0;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    color:rgba(60, 53, 79, 1) ;
+}
+.follow{
+    background-color:rgba(11, 2, 35, 0.1);
+    gap: 10px;
+}
+.follow div:nth-child(2) i:nth-child(1) {
+    color: red;
+}
+nav h1 span{
+    color: rgba(255, 66, 165, 1);
+}
+nav h1{
+    font-size: 3em;
+    font-weight: 700;
+    color: rgba(11, 2, 35, 1);
+}
+.nav-container{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.162);
+}
+/* header style star here */
+header{
+    max-width: 80%;
+    margin: 0 auto;
+    background-image: url(../resources/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-bottom: 10px;
+}
+#banner-left, #banner-right{
+    width:50%;
+}
+header div img{
+    width: 100%;
+}
+#banner-title h5{
+    font-size: 3em;
+    font-weight: 600;
+    color:rgba(11, 2, 35, 1) ;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+#goat{
+    font-size: 5.9375em;
+    font-weight: 800;
+    background-image: linear-gradient(rgba(249, 72, 178, 1),rgba(135, 88, 241, 1));
+    background-clip: text;
+    background-size: contain;
+    color: transparent
+}
+#banner-title p{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(83, 76, 100, 1);
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+#banner-btn{
+    display: flex; 
+    gap: 10px;
+    margin-top: 10px;
+}
+#banner-btn button{
+    padding: 21px 40px;
+    border: 0;
+    border-radius: 487px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+#banner-btn button:nth-child(1){
+    background-color: rgba(255, 66, 165, 1);
+}
+#banner-btn button:nth-child(2){
+    background-color:rgba(78, 197, 247, 1) ;
+}
+/* Media query */
+@media screen and (max-width:576px) {
+    nav, nav ul, header{
+        flex-direction: column;
+    }
+    #banner-left, #banner-right{
+        width:100%;
+    }
+    #goat{
+        font-size: 4em;
+    }
+    #banner-title h5{
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+    .nav-container{
+        box-shadow: none;
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px){
+    nav{
+        flex-direction: column;
+    }
+}
