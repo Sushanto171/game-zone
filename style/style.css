@@ -221,6 +221,57 @@ header div img{
     .parent img:hover+.watch{
         display: block;
     }
+    /* play instantly section */
+    .play-instantly-section{
+        max-width: 1000px;
+        margin: 20px auto;
+        gap: 100px;
+    }
+
+    .play-instantly-left{
+        text-align: right;
+    }
+    .play-instantly-left h3{
+        font-size: 3rem;
+        font-weight: 700;
+        color:rgba(11, 2, 35, 1) ;
+        margin-bottom: 30px;
+    }
+    .play-instantly-left h3 span{
+        font-size: 3rem;
+    }
+    .play-instantly-right{
+        position: relative;
+    }
+   #play-instantly-right-image, #play-instantly-left-image {
+        max-width: 100%;
+    }
+    #rectangle-66{
+        width: 180px;
+       position: absolute; 
+       bottom: -50px;
+       left: -80px;
+    }
+    #rectangle-66 img, #rectangle-78 img{
+        max-width: 100%;
+    }
+    /* play anywhere anytime css start here */
+    .play-anywhere-section{
+        flex-direction: row-reverse;
+        max-width: 1000px;
+        margin: 20px auto;
+        margin-top: 80px;
+        gap: 140px;
+    }
+    #rectangle-78{
+        width: 180px;
+       position: absolute; 
+       bottom: -50px;
+       right: -50px;
+    }
+    .play-anywhere-section .play-instantly-left{
+        text-align: left;
+    }
 /* Media query */
 @media screen and (max-width:576px) {
     body{
@@ -229,8 +280,9 @@ header div img{
     header{
         flex-direction: column-reverse;
     }
-    nav, nav ul, .we-are-main{
+    nav, nav ul, .we-are-main, .play-instantly-section,   .play-anywhere-section{
         flex-direction: column;
+        gap: 10px;
     }
     #banner-left{
         width: 75%;
@@ -238,7 +290,7 @@ header div img{
     #banner-right, #we-are-left, #we-are-right{
         width:100%;
     }
-    #goat{
+    .goat{
         font-size: 4em;
     }
     #banner-title h5{
@@ -265,9 +317,34 @@ header div img{
     .funny-video-main{
         grid-template-columns: repeat(1,1fr);
     }
+    .funny{
+        font-size: 3rem;
+    }
     .parent .watch{
         top: 170px;
         left:170px;
+    }
+    #play-instantly-left-image{
+        display: block;
+        max-width:90%;
+        margin: auto;
+        margin-left: 0;
+    } 
+    #play-instantly-right-image{
+        display: block;
+        max-width:90%;
+        margin: auto;
+        margin-right: 0;
+    }
+    #rectangle-66{
+        bottom: -50px;
+        left: 0px;
+     }
+#rectangle-78{
+    right: 0px;
+    }
+    .play-instantly-left{
+        text-align: center;
     }
 }
 @media screen and (min-width:577px) and (max-width:992px){
