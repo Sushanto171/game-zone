@@ -319,6 +319,70 @@ header div img{
         max-width: 100%;
         height: 45vw;
     }
+    /* category section */
+    #category{
+        max-width: 1000px;
+        margin:30px  auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    #category img{
+        width: 50px;
+        height: 50px;
+    }
+    #category div:hover{
+        outline: 1px solid rgb(255, 66, 165);
+        color: rgb(255, 66, 165);
+        outline-offset: 2px;
+        border-radius: 48px;
+    }
+    /* footer section */
+    #footer-container{
+        background-color: rgba(11, 2, 35, 1);
+    }
+    footer{
+        max-width: 1000px;
+        margin: auto;
+        color: #ffffff;
+        padding: 70px 10px;
+    }
+    footer .logo{
+        justify-content: center;
+    }
+    #links, #icons, #terms, #copyright{
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    #links a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.25rem;
+        font-weight: 700;
+        flex-basis: auto;
+    }
+    #links a:hover , #terms a:hover{
+        text-decoration: underline;
+    }
+    #icons{
+        font-size: 2rem;
+    }
+    .fa-facebook{
+        background-color: rgb(41, 20, 230);
+        border-radius: 50%;
+        border: 1px solid;
+    }
+        #terms a{
+            text-decoration: none;
+            color: #ffffff;
+    }
+    #copyright p{
+        text-align: center;
+    }
 /* Media query */
 @media screen and (max-width:576px) {
     body{
@@ -395,6 +459,15 @@ header div img{
     }
     .play-instantly-left{
         text-align: center;
+    }
+    #category div{
+        gap: 0;
+        font-size: 13px;
+        flex-basis: auto;
+    }
+    #category div img{
+        width: 30px;
+        height: 30px;
     }
 }
 @media screen and (min-width:577px) and (max-width:992px){
