@@ -186,10 +186,10 @@ header div img{
     .parent{
         position: relative;
         text-align: center;
-    }
+      }
     .funny-video-main .watch{
         position: absolute;
-        top: 120px;
+        top: 0%;
         left: 65px;
         display: none;
     }
@@ -215,11 +215,15 @@ header div img{
         display: block;
         margin: 10px auto;
     }
-    .parent img:hover{
+    .parent:hover img{
         filter: brightness(50%);
     }
-    .parent img:hover+.watch{
-        display: block;
+    .parent:hover .watch{
+      display: block;  
+        top: 30%;
+    }
+    .watch:hover .parent{
+        filter: brightness(50%);
     }
     /* play instantly section */
     .play-instantly-section{
@@ -435,8 +439,8 @@ header div img{
         font-size: 3rem;
     }
     .parent .watch{
-        top: 170px;
-        left:170px;
+        left:40%;
+        top: 45%;
     }
     #play-instantly-left-image{
         display: block;
